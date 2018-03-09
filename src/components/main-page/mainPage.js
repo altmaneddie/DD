@@ -1,10 +1,11 @@
 import React from 'react';
 
-export default class Status extends React.Component {
+
+export default class Register extends React.Component {
     render(){
         return (
         <div className= "wrapper">
-        
+           
         </div>
         )
     }
