@@ -19,13 +19,13 @@ const logger           = createLogger();
 const middlewares      = [thunk, logger];
 const appStore         = createStore(freezeState(rootReducer), applyMiddleware(...middlewares));
 const appDomElement    = document.getElementById('root');
-const DDApp            = connect(mapStateToProps)(App);
+const App              = connect(mapStateToProps)(App);
 
 ReactDOM.render(
   <Provider store={appStore}>
-    <DDApp />
+    <App />
   </Provider>,
   appDomElement
 );
 
-registerServiceWorker();
+// registerServiceWorker();
