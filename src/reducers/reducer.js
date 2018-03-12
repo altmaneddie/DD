@@ -1,4 +1,5 @@
 const initialState = {
+    login: false,
     parties: []
   }
   
