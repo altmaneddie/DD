@@ -1,5 +1,4 @@
 import React from 'react';
-import Login from '/'
 
 export default class Login extends React.Component {
     render() {

@@ -1,15 +1,17 @@
 const initialState = {
-    login: false,
-    parties: []
+  app: {
+    login: false
+  },
+  parties: []
+}
+
+const rootReducer = (state = initialState, action) => {
+  switch (action.type) {
+    case "ADD_PARTY":
+      return { ...state, parties: [...state.parties, action.data] };
+    default:
+      return state;
   }
-  
-  const rootReducer = (state = initialState, action) => {
-    switch (action.type) {
-      case "ADD_PARTY": 
-        return { ...state, parties: [...state.parties, action.data] };
-      default:
-        return state;
-    }
-  };
-  
-  export default rootReducer;
+};
+
+export default rootReducer;

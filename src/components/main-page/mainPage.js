@@ -1,20 +1,28 @@
 import React from 'react';
-
+import { connect } from 'react-redux';
 import Register from './register';
-import Login from './login';
+import News from './news';
+import Premium from './premium';
 
-
-export default class MainPage extends React.Component {
-
-    render(){
-        return (
-        <div className="wrapper">
-           <div className={`left-wrapper`}>Stuff in the left</div>
-           <div className={`right-wrapper`}>
-           <Register/>
-           <Login/>
-           </div>
+class MainPage extends React.Component {
+  render() {
+    console.log(this.props);
+    return (
+      <div className="main-wrapper row">
+        <div className="col-lg-6">Stuff in the left</div>
+        <div className="col-lg-6 row">
+          <div className="col-lg-6">
+            <Register />
+            <News />
+          </div>
+          <div className="col-lg-6">
+            <Premium />
+          </div>
         </div>
-        )
-    }
+      </div >
+    )
+  }
 }
+
+export default connect(state => ({ login: state.app.login }))(MainPage)
+
