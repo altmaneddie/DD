@@ -1,0 +1,10 @@
+.short-login-form-item-wrapper{
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+}
+
+.short-login-form-submit{
+    display: inline-block;
+    width: 100%;
+}
