@@ -1,6 +1,7 @@
-import 'bootstrap/dist/css/bootstrap.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'bootstrap/dist/css/bootstrap.css';
+
 
 import { createLogger } from 'redux-logger';
 import { createStore, applyMiddleware } from 'redux';
@@ -19,13 +20,13 @@ const logger           = createLogger();
 const middlewares      = [thunk, logger];
 const appStore         = createStore(freezeState(rootReducer), applyMiddleware(...middlewares));
 const appDomElement    = document.getElementById('root');
-const App              = connect(mapStateToProps)(App);
+const MyApp            = connect(mapStateToProps)(App);
 
 ReactDOM.render(
   <Provider store={appStore}>
-    <App />
+    <MyApp />
   </Provider>,
   appDomElement
 );
 
-// registerServiceWorker();
+registerServiceWorker();
