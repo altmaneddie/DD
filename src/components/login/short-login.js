@@ -8,7 +8,7 @@ export default class LoginShort extends React.Component {
                 <form className="short-login-form">
                     <div className="short-login-form-item-wrappper">
                         <label className="short-login-form-item">
-                            Name:
+                            Username:
                             <input type="text" name="name" />
                         </label>
                     </div>
@@ -18,9 +18,7 @@ export default class LoginShort extends React.Component {
                             <input type="password" name="password" />
                         </label>
                     </div>
-                    <div className="short-login-form-item-wrappper">
                         <input className="short-login-form-submit" type="submit" value="Submit" />
-                    </div>
                 </form>
             </div>
         )
