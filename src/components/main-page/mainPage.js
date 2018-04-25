@@ -6,13 +6,15 @@ import Premium from './premium';
 
 class MainPage extends React.Component {
   render() {
-    console.log(this.props);
     return (
       <div className="main-wrapper row">
-        <div className="col-lg-6">Stuff in the left</div>
+        <div className="col-lg-6">Stuff in the left
+          <button>Character creation box</button>
+        </div>
         <div className="col-lg-6 row">
           <div className="col-lg-6">
             <Register />
+            <hr />
             <News />
           </div>
           <div className="col-lg-6">

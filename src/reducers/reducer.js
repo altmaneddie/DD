@@ -2,7 +2,12 @@ const initialState = {
   app: {
     login: false
   },
-  parties: []
+  characters: [],
+  parties: [],
+  char_creation: {
+    active: false,
+    progress: 0,
+  }
 }
 
 const rootReducer = (state = initialState, action) => {
