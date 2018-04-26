@@ -1,16 +1,18 @@
 import React from 'react';
 import { connect } from 'react-redux';
-
+import BasicInfo from './basic-info';
+import races from '../../data/races.json';
 
 class CharacterCreation extends React.Component {
+
+  onChange = (event) => {
+    this.setState({ char: { name: event.nativeEvent.target.value } })
+  }
+
   render() {
     return (
       <div>
-        <form>
-          General Character Information
-          <input type="text" placeholder="Character Name"></input>
-
-        </form>
+        <BasicInfo races={races} />
       </div>
     )
   }

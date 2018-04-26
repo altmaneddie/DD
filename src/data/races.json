@@ -1,0 +1,30 @@
+{
+  "races": [
+    {
+      "name": "a",
+      "subraces": [
+        "abc",
+        "def",
+        "xyz"
+      ]
+    },
+    {
+      "b": {
+        "subraces": [
+          "abc",
+          "def",
+          "xyz"
+        ]
+      }
+    },
+    {
+      "c": {
+        "division": [
+          "abc",
+          "def",
+          "xyz"
+        ]
+      }
+    }
+  ]
+}
