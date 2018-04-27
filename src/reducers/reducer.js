@@ -7,6 +7,13 @@ const initialState = {
   char_creation: {
     active: false,
     progress: 0,
+    basic_info: {
+      name:"",
+      race:"",
+      subrace:"",
+      class:"",
+      subclass:""
+    }
   }
 }
 

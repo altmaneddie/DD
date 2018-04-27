@@ -5,9 +5,9 @@ import races from '../../data/races.json';
 
 class CharacterCreation extends React.Component {
 
-  onChange = (event) => {
-    this.setState({ char: { name: event.nativeEvent.target.value } })
-  }
+  // onChange = (event) => {
+  //   this.setState({ char: { name: event.nativeEvent.target.value } })
+  // }
 
   render() {
     return (

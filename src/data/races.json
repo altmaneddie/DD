@@ -9,22 +9,20 @@
       ]
     },
     {
-      "b": {
-        "subraces": [
-          "abc",
-          "def",
-          "xyz"
-        ]
-      }
+      "name": "b",
+      "subraces": [
+        "abc",
+        "def",
+        "xyz"
+      ]
     },
     {
-      "c": {
-        "division": [
-          "abc",
-          "def",
-          "xyz"
-        ]
-      }
+      "name": "c",
+      "subraces": [
+        "abc",
+        "def",
+        "xyz"
+      ]
     }
   ]
 }

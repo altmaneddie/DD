@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { HashRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 import './App.css';
 
 import MainPage from './components/main-page/mainPage';
@@ -9,13 +9,13 @@ import CharacterCreation from './components/char-creation/char-creation';
 class MyApp extends Component {
   render() {
     return (
-      <HashRouter>
+      <BrowserRouter>
         <div className="App">
-         <Route exact path="/" component={Header} />
-         <Route exact path="/" component={MainPage} />
-         <Route exact path="/char-creation" component={CharacterCreation} />
+          <Header />
+          <Route exact path="/" component={MainPage} />
+          <Route exact path="/char" component={CharacterCreation} />
         </div>
-      </HashRouter>
+      </BrowserRouter>
     );
   }
 }
