@@ -8,11 +8,12 @@ const initialState = {
     active: false,
     progress: 0,
     basic_info: {
-      name:"",
-      race:"",
-      subrace:"",
-      class:"",
-      subclass:""
+      edit: true,
+      name: "",
+      race: "",
+      subrace: "",
+      class: "",
+      subclass: ""
     }
   }
 }

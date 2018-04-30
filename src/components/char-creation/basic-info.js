@@ -8,6 +8,7 @@ class BasicInfo extends React.Component {
     super(props);
     this.state = {
       basic_info: {
+        edit: true,
         name: "",
         race: "",
         subrace: "",
@@ -17,8 +18,15 @@ class BasicInfo extends React.Component {
     }
   }
 
-  render() {
+  renderView() {
+    <div>
+      <ul>
+        <li>{}</li>
+      </ul>
+    </div>
+  }
 
+  renderEdit() {
     return (
       <div>
         <h2>General Character Information</h2>
@@ -46,6 +54,14 @@ class BasicInfo extends React.Component {
         </div>
       </div>
     )
+  }
+
+  render() {
+    if (this.props.char.edit) {
+      return this.renderEdit();
+    } else {
+      return this.renderView();
+    }
   }
 }
 
