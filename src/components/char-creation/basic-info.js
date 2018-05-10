@@ -4,20 +4,6 @@ import { connect } from 'react-redux';
 
 class BasicInfo extends React.Component {
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      basic_info: {
-        edit: true,
-        name: "",
-        race: "",
-        subrace: "",
-        class: "",
-        subclass: ""
-      }
-    }
-  }
-
   renderView() {
     <div>
       <ul>
