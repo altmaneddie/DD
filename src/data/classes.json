@@ -1,0 +1,28 @@
+{
+  "classes": [
+    {
+      "name": "a",
+      "property": [
+        "abc",
+        "def",
+        "xyz"
+      ]
+    },
+    {
+      "name": "b",
+      "property": [
+        "abc",
+        "def",
+        "xyz"
+      ]
+    },
+    {
+      "name": "c",
+      "property": [
+        "abc",
+        "def",
+        "xyz"
+      ]
+    }
+  ]
+}

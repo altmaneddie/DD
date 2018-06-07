@@ -17,7 +17,9 @@
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.2.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

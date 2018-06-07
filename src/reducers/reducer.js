@@ -5,7 +5,6 @@ const initialState = {
   characters: [],
   parties: [],
   char_creation: {
-    active: false,
     progress: 0,
     basic_info: {
       edit: true,

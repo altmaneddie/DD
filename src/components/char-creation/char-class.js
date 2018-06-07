@@ -2,26 +2,18 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 
-class BasicInfo extends React.Component {
+class charClass extends React.Component {
 
-  onChange = () => {
-
+  renderView() {
+    <div>
+      <ul>
+        <li>{this.props.race}</li>
+        <li>{this.props.subrace}</li>
+      </ul>
+    </div>
   }
 
-  renderView = () => {
-    return (
-      <div>
-        <ul>
-          <li>{this.props.name}</li>
-          <li>{this.props.race}</li>
-          <li>{this.props.subrace}</li>
-        </ul>
-      </div>
-    )
-  }
-
-  renderEdit = () => {
-    console.log(this.props.char.race);
+  renderEdit() {
     return (
       <div>
         <h2>General Character Information</h2>
@@ -32,11 +24,11 @@ class BasicInfo extends React.Component {
           <label htmlFor="race"></label>
           <select className="race-input" name="Races">
             {this.props.races.races.map((race, i) => (
-              <option key={i} value={race.name} onChange={this.onChange}>{race.name}</option>
+              <option key={i} value={race.name}>{race.name}</option>
             ))}
           </select>
 
-          {(this.props.char.race !== undefined) && this.props.char.basic_info.subrace &&
+          {this.props.char.active && this.props.char.basic_info.subrace &&
             <div>
               <label htmlFor="race"></label>
               <select className="race-input" name="Races">
@@ -52,12 +44,12 @@ class BasicInfo extends React.Component {
   }
 
   render() {
-    if (this.props.char.basic_info.edit) {
-      return this.renderEdit;
+    if (this.props.char.edit) {
+      return this.renderEdit();
     } else {
-      return this.renderView;
+      return this.renderView();
     }
   }
 }
 
-export default connect(state => ({ login: state.app.login, char: state.char_creation }))(BasicInfo)
+export default connect(state => ({ login: state.app.login, char: state.char_creation }))(charClass)
